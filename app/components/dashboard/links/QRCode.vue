@@ -17,11 +17,11 @@ const options = {
   margin: 10,
   qrOptions: { typeNumber: 0 as const, mode: 'Byte' as const, errorCorrectionLevel: 'Q' as const },
   imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 2 },
-  dotsOptions: { type: 'dots' as const, color: '#000000' },
+  dotsOptions: { type: 'square' as const, color: '#000000' },
   backgroundOptions: { color: '#ffffff' },
   image: props.image,
-  cornersSquareOptions: { type: 'extra-rounded' as const, color: '#000000' },
-  cornersDotOptions: { type: 'dot' as const, color: '#000000' },
+  cornersSquareOptions: { type: 'square' as const, color: '#000000' },
+  cornersDotOptions: { type: 'square' as const, color: '#000000' },
 }
 
 const qrCode = new QRCodeStyling(options)
